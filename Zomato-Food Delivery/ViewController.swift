@@ -9,9 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mobileText: UITextField!
+    @IBOutlet weak var loginimage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loginimage.layer.cornerRadius = 45
+        loginimage.layer.masksToBounds = true
     }
 
 
