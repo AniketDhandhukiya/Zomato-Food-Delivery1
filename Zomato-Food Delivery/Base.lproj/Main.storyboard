@@ -909,6 +909,9 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                 <buttonConfiguration key="configuration" style="gray" image="google (1)" cornerStyle="large">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginGoogleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kfd-P1-nBU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWz-dH-Tsu">
                                 <rect key="frame" x="237" y="707" width="50" height="45"/>
@@ -952,6 +955,115 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="114.50892857142857"/>
+        </scene>
+        <!--Location Page-->
+        <scene sceneID="qBH-Fz-5lO">
+            <objects>
+                <viewController storyboardIdentifier="locationPage" id="x8d-HD-iRP" customClass="locationPage" customModule="Zomato_Food_Delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="phs-Ve-hrP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We don't have your " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHQ-Ft-WbI">
+                                <rect key="frame" x="20" y="425" width="374" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="FN4-AK-8vV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location, yet!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWl-3P-gOh">
+                                <rect key="frame" x="20" y="464" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Z5z-Zt-ESU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your location to start exploring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPD-u1-Jqa">
+                                <rect key="frame" x="20" y="517" width="374" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="xbf-Wq-dDI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" restaurants near you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cv-BS-a1E">
+                                <rect key="frame" x="20" y="551" width="374" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="6Ku-OX-iik"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Z4-1K-mtk">
+                                <rect key="frame" x="20" y="600" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="pC6-1F-tAV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enable Device Location">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.8836021423" green="0.219135046" blue="0.26403570180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEC-6J-YHg">
+                                <rect key="frame" x="20" y="656" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2e7-v1-ePU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enable Your Location Manually">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man-lost-the-location-png" translatesAutoresizingMaskIntoConstraints="NO" id="WJO-fm-WwG">
+                                <rect key="frame" x="87" y="148" width="240" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223" id="0B9-fN-9np"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f0P-2r-6TK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f0P-2r-6TK" firstAttribute="trailing" secondItem="WJO-fm-WwG" secondAttribute="trailing" constant="87" id="3jz-wW-sa7"/>
+                            <constraint firstItem="WJO-fm-WwG" firstAttribute="top" secondItem="f0P-2r-6TK" secondAttribute="top" constant="104" id="7T1-IG-9ai"/>
+                            <constraint firstItem="f0P-2r-6TK" firstAttribute="trailing" secondItem="4cv-BS-a1E" secondAttribute="trailing" constant="20" id="9Hs-R8-bup"/>
+                            <constraint firstItem="f0P-2r-6TK" firstAttribute="trailing" secondItem="0Z4-1K-mtk" secondAttribute="trailing" constant="20" id="Bk3-s3-WlZ"/>
+                            <constraint firstItem="pPD-u1-Jqa" firstAttribute="top" secondItem="KWl-3P-gOh" secondAttribute="bottom" constant="21" id="ETm-nB-62e"/>
+                            <constraint firstItem="f0P-2r-6TK" firstAttribute="trailing" secondItem="pPD-u1-Jqa" secondAttribute="trailing" constant="20" id="Hnc-QR-VPh"/>
+                            <constraint firstItem="VHQ-Ft-WbI" firstAttribute="top" secondItem="WJO-fm-WwG" secondAttribute="bottom" constant="54" id="Jjr-eB-qcJ"/>
+                            <constraint firstItem="TEC-6J-YHg" firstAttribute="leading" secondItem="f0P-2r-6TK" secondAttribute="leading" constant="20" id="MYw-QT-arV"/>
+                            <constraint firstItem="0Z4-1K-mtk" firstAttribute="top" secondItem="4cv-BS-a1E" secondAttribute="bottom" constant="23" id="TOc-WB-KB9"/>
+                            <constraint firstItem="KWl-3P-gOh" firstAttribute="leading" secondItem="f0P-2r-6TK" secondAttribute="leading" constant="20" id="Xjs-2K-EiA"/>
+                            <constraint firstItem="KWl-3P-gOh" firstAttribute="top" secondItem="VHQ-Ft-WbI" secondAttribute="bottom" constant="3" id="Znq-Bm-jx8"/>
+                            <constraint firstItem="WJO-fm-WwG" firstAttribute="leading" secondItem="f0P-2r-6TK" secondAttribute="leading" constant="87" id="bX1-ee-0QS"/>
+                            <constraint firstItem="VHQ-Ft-WbI" firstAttribute="leading" secondItem="f0P-2r-6TK" secondAttribute="leading" constant="20" id="cPl-a7-zuR"/>
+                            <constraint firstItem="f0P-2r-6TK" firstAttribute="trailing" secondItem="TEC-6J-YHg" secondAttribute="trailing" constant="20" id="inM-d1-Zc9"/>
+                            <constraint firstItem="4cv-BS-a1E" firstAttribute="top" secondItem="KWl-3P-gOh" secondAttribute="bottom" constant="55" id="jh4-FR-2lK"/>
+                            <constraint firstItem="TEC-6J-YHg" firstAttribute="top" secondItem="0Z4-1K-mtk" secondAttribute="bottom" constant="8" symbolic="YES" id="jvY-Uy-CO8"/>
+                            <constraint firstItem="f0P-2r-6TK" firstAttribute="trailing" secondItem="KWl-3P-gOh" secondAttribute="trailing" constant="20" id="kof-Zx-PxH"/>
+                            <constraint firstItem="f0P-2r-6TK" firstAttribute="trailing" secondItem="VHQ-Ft-WbI" secondAttribute="trailing" constant="20" id="rRt-wC-Mg7"/>
+                            <constraint firstItem="4cv-BS-a1E" firstAttribute="leading" secondItem="f0P-2r-6TK" secondAttribute="leading" constant="20" id="sfY-yE-9UK"/>
+                            <constraint firstItem="0Z4-1K-mtk" firstAttribute="leading" secondItem="f0P-2r-6TK" secondAttribute="leading" constant="20" id="t1f-Kc-rff"/>
+                            <constraint firstItem="pPD-u1-Jqa" firstAttribute="leading" secondItem="f0P-2r-6TK" secondAttribute="leading" constant="20" id="yXB-4N-pxE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="TEC-6J-YHg" id="xaH-T0-eMy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8he-Zz-02s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798.5507246376812" y="114.50892857142857"/>
         </scene>
         <!--Privacy Policy Page-->
         <scene sceneID="jnF-lN-uD4">
@@ -1386,11 +1498,15 @@ Please email legal@zomato.com if you witness any behavior not in compliance with
         <image name="Zomato-Machine-Learning-1" width="2240" height="1260"/>
         <image name="apple-logo" width="24" height="24"/>
         <image name="google (1)" width="24" height="24"/>
+        <image name="man-lost-the-location-png" width="1920" height="1920"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

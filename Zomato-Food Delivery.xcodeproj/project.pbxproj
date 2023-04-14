@@ -10,6 +10,7 @@
 		C6A64C4829E92F35004FF6DB /* termsOfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4729E92F35004FF6DB /* termsOfPage.swift */; };
 		C6A64C4A29E92F50004FF6DB /* privacyPolicyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4929E92F50004FF6DB /* privacyPolicyPage.swift */; };
 		C6A64C4C29E92F5F004FF6DB /* contentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4B29E92F5F004FF6DB /* contentPage.swift */; };
+		C6A64C4E29E93B77004FF6DB /* locationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4D29E93B77004FF6DB /* locationPage.swift */; };
 		C6F2A58329E7D3800010A3A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2A58229E7D3800010A3A4 /* AppDelegate.swift */; };
 		C6F2A58529E7D3800010A3A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2A58429E7D3800010A3A4 /* SceneDelegate.swift */; };
 		C6F2A58729E7D3800010A3A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2A58629E7D3800010A3A4 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		C6A64C4729E92F35004FF6DB /* termsOfPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = termsOfPage.swift; sourceTree = "<group>"; };
 		C6A64C4929E92F50004FF6DB /* privacyPolicyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privacyPolicyPage.swift; sourceTree = "<group>"; };
 		C6A64C4B29E92F5F004FF6DB /* contentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentPage.swift; sourceTree = "<group>"; };
+		C6A64C4D29E93B77004FF6DB /* locationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationPage.swift; sourceTree = "<group>"; };
 		C6F2A57F29E7D3800010A3A4 /* Zomato-Food Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zomato-Food Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F2A58229E7D3800010A3A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6F2A58429E7D3800010A3A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				C6F2A58429E7D3800010A3A4 /* SceneDelegate.swift */,
 				C6F2A58629E7D3800010A3A4 /* ViewController.swift */,
 				C6F2A58829E7D3800010A3A4 /* Main.storyboard */,
+				C6A64C4D29E93B77004FF6DB /* locationPage.swift */,
 				C6F2A58E29E7D3810010A3A4 /* Assets.xcassets */,
 				C6F2A59029E7D3810010A3A4 /* LaunchScreen.storyboard */,
 				C6F2A59329E7D3810010A3A4 /* Info.plist */,
@@ -153,6 +156,7 @@
 				C6A64C4C29E92F5F004FF6DB /* contentPage.swift in Sources */,
 				C6F2A58729E7D3800010A3A4 /* ViewController.swift in Sources */,
 				C6A64C4A29E92F50004FF6DB /* privacyPolicyPage.swift in Sources */,
+				C6A64C4E29E93B77004FF6DB /* locationPage.swift in Sources */,
 				C6F2A58329E7D3800010A3A4 /* AppDelegate.swift in Sources */,
 				C6A64C4829E92F35004FF6DB /* termsOfPage.swift in Sources */,
 				C6F2A58529E7D3800010A3A4 /* SceneDelegate.swift in Sources */,

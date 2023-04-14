@@ -27,6 +27,10 @@ class ViewController: UIViewController {
         let nv = storyboard?.instantiateViewController(withIdentifier: "privacyPolicyPage") as! privacyPolicyPage
         navigationController?.pushViewController(nv, animated: true)
     }
+    @IBAction func loginGoogleAction(_ sender: Any) {
+        let nv = storyboard?.instantiateViewController(withIdentifier: "locationPage") as! locationPage
+        navigationController?.pushViewController(nv, animated: true)
+    }
     
     @IBAction func contentPolicies(_ sender: Any) {
         let nv = storyboard?.instantiateViewController(withIdentifier: "contentPage") as! contentPage
