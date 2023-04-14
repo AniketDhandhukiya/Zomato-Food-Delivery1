@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Zomato_logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yh1-Iz-Amy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Zomato_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Yh1-Iz-Amy">
                                 <rect key="frame" x="-323.5" y="260" width="1061" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="e4e-FG-Tac"/>
@@ -84,7 +84,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Zomato_logo-1" width="1061" height="235"/>
+        <image name="Zomato_logo" width="1061" height="235"/>
         <image name="green-earth_54199-1938__1_-removebg-preview" width="499" height="499"/>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
