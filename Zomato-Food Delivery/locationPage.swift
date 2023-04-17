@@ -20,5 +20,9 @@ class locationPage: UIViewController {
     }
     
 
-
+    @IBAction func locationButtonAction(_ sender: Any) {
+        let nv = storyboard?.instantiateViewController(withIdentifier: "zomatoMainPage") as! zomatoMainPage
+        navigationController?.pushViewController(nv, animated: true)
+    }
+    
 }
