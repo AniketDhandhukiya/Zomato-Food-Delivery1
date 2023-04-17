@@ -1,17 +1,17 @@
 //
-//  termsOfPage.swift
+//  zomatoMainPage.swift
 //  Zomato-Food Delivery
 //
-//  Created by R83 on 14/04/23.
+//  Created by R83 on 17/04/23.
 //
 
 import UIKit
 
-class termsOfPage: UIViewController {
+class zomatoMainPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-  
+    
 }
