@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C61ACF3329EFBCD9004CB5D2 /* OTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61ACF3229EFBCD9004CB5D2 /* OTP.swift */; };
+		C61ACF3629EFBD2A004CB5D2 /* DPOTPView in Frameworks */ = {isa = PBXBuildFile; productRef = C61ACF3529EFBD2A004CB5D2 /* DPOTPView */; };
+		C61ACF3829EFBD63004CB5D2 /* otpPAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61ACF3729EFBD63004CB5D2 /* otpPAge.swift */; };
+		C6686BD029EE77CA00C8DF6D /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6686BCF29EE77CA00C8DF6D /* CollectionViewCell2.swift */; };
 		C66A888929ED109400BD25D3 /* zomatoMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A888829ED109400BD25D3 /* zomatoMainPage.swift */; };
 		C66A888B29ED216000BD25D3 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A888A29ED216000BD25D3 /* CollectionViewCell1.swift */; };
 		C6A64C4829E92F35004FF6DB /* termsOfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4729E92F35004FF6DB /* termsOfPage.swift */; };
@@ -23,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C61ACF3229EFBCD9004CB5D2 /* OTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP.swift; sourceTree = "<group>"; };
+		C61ACF3729EFBD63004CB5D2 /* otpPAge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otpPAge.swift; sourceTree = "<group>"; };
+		C6686BCF29EE77CA00C8DF6D /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
 		C66A888829ED109400BD25D3 /* zomatoMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zomatoMainPage.swift; sourceTree = "<group>"; };
 		C66A888A29ED216000BD25D3 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
 		C6A64C4729E92F35004FF6DB /* termsOfPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = termsOfPage.swift; sourceTree = "<group>"; };
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61ACF3629EFBD2A004CB5D2 /* DPOTPView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +82,9 @@
 				C6F2A58429E7D3800010A3A4 /* SceneDelegate.swift */,
 				C6F2A58629E7D3800010A3A4 /* ViewController.swift */,
 				C6F2A58829E7D3800010A3A4 /* Main.storyboard */,
+				C61ACF3729EFBD63004CB5D2 /* otpPAge.swift */,
+				C61ACF3229EFBCD9004CB5D2 /* OTP.swift */,
+				C6686BCF29EE77CA00C8DF6D /* CollectionViewCell2.swift */,
 				C66A888A29ED216000BD25D3 /* CollectionViewCell1.swift */,
 				C66A888829ED109400BD25D3 /* zomatoMainPage.swift */,
 				C6A64C4D29E93B77004FF6DB /* locationPage.swift */,
@@ -104,6 +115,9 @@
 			dependencies = (
 			);
 			name = "Zomato-Food Delivery";
+			packageProductDependencies = (
+				C61ACF3529EFBD2A004CB5D2 /* DPOTPView */,
+			);
 			productName = "Zomato-Food Delivery";
 			productReference = C6F2A57F29E7D3800010A3A4 /* Zomato-Food Delivery.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +146,9 @@
 				Base,
 			);
 			mainGroup = C6F2A57629E7D3800010A3A4;
+			packageReferences = (
+				C61ACF3429EFBD2A004CB5D2 /* XCRemoteSwiftPackageReference "DPOTPView" */,
+			);
 			productRefGroup = C6F2A58029E7D3800010A3A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,11 +179,14 @@
 				C66A888B29ED216000BD25D3 /* CollectionViewCell1.swift in Sources */,
 				C6A64C4C29E92F5F004FF6DB /* contentPage.swift in Sources */,
 				C6F2A58729E7D3800010A3A4 /* ViewController.swift in Sources */,
+				C61ACF3329EFBCD9004CB5D2 /* OTP.swift in Sources */,
 				C6A64C4A29E92F50004FF6DB /* privacyPolicyPage.swift in Sources */,
 				C6A64C4E29E93B77004FF6DB /* locationPage.swift in Sources */,
 				C6F2A58329E7D3800010A3A4 /* AppDelegate.swift in Sources */,
+				C61ACF3829EFBD63004CB5D2 /* otpPAge.swift in Sources */,
 				C66A888929ED109400BD25D3 /* zomatoMainPage.swift in Sources */,
 				C6A64C4829E92F35004FF6DB /* termsOfPage.swift in Sources */,
+				C6686BD029EE77CA00C8DF6D /* CollectionViewCell2.swift in Sources */,
 				C6F2A58529E7D3800010A3A4 /* SceneDelegate.swift in Sources */,
 				C6F2A58D29E7D3800010A3A4 /* Zomato_Food_Delivery.xcdatamodeld in Sources */,
 			);
@@ -386,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C61ACF3429EFBD2A004CB5D2 /* XCRemoteSwiftPackageReference "DPOTPView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Datt1994/DPOTPView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C61ACF3529EFBD2A004CB5D2 /* DPOTPView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C61ACF3429EFBD2A004CB5D2 /* XCRemoteSwiftPackageReference "DPOTPView" */;
+			productName = DPOTPView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C6F2A58B29E7D3800010A3A4 /* Zomato_Food_Delivery.xcdatamodeld */ = {

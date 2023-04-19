@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mobileTextField: UITextField!
     @IBOutlet weak var mobileText: UITextField!
     @IBOutlet weak var loginimage: UIImageView!
     override func viewDidLoad() {
@@ -17,6 +18,17 @@ class ViewController: UIViewController {
         loginimage.layer.masksToBounds = true
     }
 
+    @IBAction func continueAtion(_ sender: Any) {
+        if mobileTextField.text?.count == 10{
+        let nv = storyboard?.instantiateViewController(withIdentifier: "otpPAge") as! otpPAge
+            navigationController?.pushViewController(nv, animated: true)
+        }
+        else{
+            let alert = UIAlertController.init(title: "ERROR", message: "Please Enter a Valid Mobile number", preferredStyle: .alert)
+            alert.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+    }
     @IBAction func termsOfAction(_ sender: Any) {
         let nv = storyboard?.instantiateViewController(withIdentifier: "termsOfPage") as! termsOfPage
         navigationController?.pushViewController(nv, animated: true)

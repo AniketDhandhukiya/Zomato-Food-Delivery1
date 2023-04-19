@@ -850,6 +850,9 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.8836021423" green="0.219135046" blue="0.26403570180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueAtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WxW-be-aJw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsX-wN-xhU">
                                 <rect key="frame" x="196" y="677" width="22" height="22"/>
@@ -951,6 +954,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                     <connections>
                         <outlet property="loginimage" destination="oYY-DS-xDq" id="0TU-pX-tdg"/>
                         <outlet property="mobileText" destination="HUT-HP-mbm" id="emS-Fb-wMv"/>
+                        <outlet property="mobileTextField" destination="HUT-HP-mbm" id="jXh-9j-Ald"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1067,7 +1071,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8he-Zz-02s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1798.5507246376812" y="114.50892857142857"/>
+            <point key="canvasLocation" x="2487" y="115"/>
         </scene>
         <!--Zomato Main Page-->
         <scene sceneID="XQb-BA-nyY">
@@ -1131,7 +1135,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8uW-ye-AMp">
                                 <rect key="frame" x="20" y="196" width="374" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.9215019941" green="0.92507427929999997" blue="0.95573061699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="IAQ-S2-9yR"/>
                                     <constraint firstAttribute="width" constant="374" id="ron-r2-MgN"/>
@@ -1150,12 +1154,12 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                             <rect key="frame" x="0.0" y="0.0" width="235" height="91"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-3u-qzO">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-3u-qzO">
                                                     <rect key="frame" x="-7" y="0.0" width="114" height="91"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XS5-NA-bn1">
-                                                    <rect key="frame" x="115" y="8" width="112" height="21"/>
+                                                    <rect key="frame" x="115" y="8" width="112" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -1170,7 +1174,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                 </label>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.80614704616142041" green="0.80614704616142041" blue="0.80614704616142041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="235" height="91"/>
                                         <connections>
                                             <outlet property="imageview" destination="zYu-3u-qzO" id="SlH-ND-sRj"/>
@@ -1184,45 +1188,170 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                     <outlet property="delegate" destination="hOW-f5-zMr" id="2de-DU-fcV"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- - - - - - - - -  WHAT'S ON YOUR MIND ?  - - - - - - - - -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3K-DN-FJy">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- - - - - - - - -  WHAT'S ON YOUR MIND ?  - - - - - - - - -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3K-DN-FJy">
                                 <rect key="frame" x="20" y="428" width="374" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Ibr-Pz-eEH"/>
+                                    <constraint firstAttribute="height" constant="20" id="LPj-ua-3Bp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2jE-9W-s3E">
+                                <rect key="frame" x="20" y="456" width="374" height="191"/>
+                                <color key="backgroundColor" red="0.9215019941" green="0.92507427929999997" blue="0.95573061699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="Z46-db-dde"/>
+                                    <constraint firstAttribute="width" constant="374" id="i8S-BH-JNM"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iJQ-Qo-wJg">
+                                    <size key="itemSize" width="96" height="89"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell2" reuseIdentifier="cell2" id="ybp-rp-Vn1" customClass="CollectionViewCell2" customModule="Zomato_Food_Delivery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1Mz-Hq-mVs">
+                                            <rect key="frame" x="0.0" y="0.0" width="96" height="89"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEX-eq-JqA">
+                                                    <rect key="frame" x="-7" y="0.0" width="103" height="89"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1t8-zC-Prn">
+                                                    <rect key="frame" x="115" y="8" width="112" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.9215019941" green="0.92507427929999997" blue="0.95573061699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="96" height="89"/>
+                                        <connections>
+                                            <outlet property="imageview2" destination="cEX-eq-JqA" id="OsP-8D-D9k"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="hOW-f5-zMr" id="0SJ-Tp-YKf"/>
+                                    <outlet property="delegate" destination="hOW-f5-zMr" id="loC-eY-Ed4"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sGp-HB-EjT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.92261743557291465" green="0.92469668121591608" blue="0.95642568913514747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Gsz-qg-GJF" firstAttribute="leading" secondItem="sGp-HB-EjT" secondAttribute="leading" constant="17" id="1Rs-mY-lPg"/>
                             <constraint firstItem="nFi-SU-pGa" firstAttribute="leading" secondItem="sGp-HB-EjT" secondAttribute="leading" constant="20" id="26m-KZ-vUQ"/>
+                            <constraint firstItem="g3K-DN-FJy" firstAttribute="top" secondItem="8uW-ye-AMp" secondAttribute="bottom" constant="32" id="2Hy-it-aT3"/>
                             <constraint firstItem="nbL-w1-JLS" firstAttribute="leading" secondItem="sGp-HB-EjT" secondAttribute="leading" constant="20" id="3a0-56-NpV"/>
                             <constraint firstItem="XkV-gy-vgB" firstAttribute="top" secondItem="sGp-HB-EjT" secondAttribute="top" constant="4" id="6Qr-qq-yok"/>
                             <constraint firstItem="MJC-S0-eBt" firstAttribute="top" secondItem="sGp-HB-EjT" secondAttribute="top" id="79n-FC-Ool"/>
                             <constraint firstItem="MJC-S0-eBt" firstAttribute="leading" secondItem="Gsz-qg-GJF" secondAttribute="trailing" constant="8" symbolic="YES" id="8xa-Ih-K0s"/>
+                            <constraint firstItem="sGp-HB-EjT" firstAttribute="trailing" secondItem="2jE-9W-s3E" secondAttribute="trailing" constant="20" id="A3U-Vl-7vh"/>
                             <constraint firstItem="8uW-ye-AMp" firstAttribute="top" secondItem="nFi-SU-pGa" secondAttribute="bottom" constant="27" id="DLB-1R-NhA"/>
                             <constraint firstItem="sGp-HB-EjT" firstAttribute="trailing" secondItem="nbL-w1-JLS" secondAttribute="trailing" constant="20" id="DOC-Oz-hck"/>
                             <constraint firstItem="sGp-HB-EjT" firstAttribute="trailing" secondItem="LSZ-cC-NWt" secondAttribute="trailing" constant="20" id="FEz-kK-NCT"/>
                             <constraint firstItem="sGp-HB-EjT" firstAttribute="trailing" secondItem="XkV-gy-vgB" secondAttribute="trailing" constant="278" id="GUl-1Q-OQY"/>
+                            <constraint firstItem="sGp-HB-EjT" firstAttribute="trailing" secondItem="g3K-DN-FJy" secondAttribute="trailing" constant="20" id="HHu-P0-MpM"/>
                             <constraint firstItem="LSZ-cC-NWt" firstAttribute="top" secondItem="XkV-gy-vgB" secondAttribute="bottom" id="KSx-XA-C43"/>
                             <constraint firstItem="8uW-ye-AMp" firstAttribute="leading" secondItem="sGp-HB-EjT" secondAttribute="leading" constant="20" id="Mzy-b5-XwL"/>
+                            <constraint firstItem="2jE-9W-s3E" firstAttribute="top" secondItem="g3K-DN-FJy" secondAttribute="bottom" constant="8" symbolic="YES" id="NJV-0e-p1m"/>
                             <constraint firstItem="nbL-w1-JLS" firstAttribute="top" secondItem="LSZ-cC-NWt" secondAttribute="bottom" constant="12" id="W2a-WZ-vcL"/>
+                            <constraint firstItem="g3K-DN-FJy" firstAttribute="leading" secondItem="sGp-HB-EjT" secondAttribute="leading" constant="20" id="We6-fh-mHf"/>
                             <constraint firstItem="Gsz-qg-GJF" firstAttribute="top" secondItem="sGp-HB-EjT" secondAttribute="top" id="cNd-cT-Ur9"/>
                             <constraint firstItem="sGp-HB-EjT" firstAttribute="trailing" secondItem="MJC-S0-eBt" secondAttribute="trailing" constant="309" id="cYe-9K-sah"/>
                             <constraint firstItem="sGp-HB-EjT" firstAttribute="trailing" secondItem="nFi-SU-pGa" secondAttribute="trailing" constant="20" id="gkQ-Ay-SiF"/>
                             <constraint firstItem="sGp-HB-EjT" firstAttribute="trailing" secondItem="8uW-ye-AMp" secondAttribute="trailing" constant="20" id="hsW-nU-gLu"/>
                             <constraint firstItem="nFi-SU-pGa" firstAttribute="top" secondItem="nbL-w1-JLS" secondAttribute="bottom" constant="14" id="iIv-Pe-M2h"/>
                             <constraint firstItem="LSZ-cC-NWt" firstAttribute="leading" secondItem="Gsz-qg-GJF" secondAttribute="trailing" constant="8" symbolic="YES" id="sCF-jP-Gzb"/>
+                            <constraint firstItem="2jE-9W-s3E" firstAttribute="leading" secondItem="sGp-HB-EjT" secondAttribute="leading" constant="20" id="tSo-ef-gVZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yOO-Kn-BsA"/>
                     <connections>
                         <outlet property="cv" destination="8uW-ye-AMp" id="GQd-dB-Rs6"/>
+                        <outlet property="cv2" destination="2jE-9W-s3E" id="Aed-0z-YBP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24x-CY-D0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2560.8695652173915" y="114.50892857142857"/>
+            <point key="canvasLocation" x="3181" y="115"/>
+        </scene>
+        <!--OtpP Age-->
+        <scene sceneID="AMQ-YT-9CU">
+            <objects>
+                <viewController storyboardIdentifier="otpPAge" id="oLz-iH-bIq" customClass="otpPAge" customModule="Zomato_Food_Delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L0W-s8-vPS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcC-Of-8GN">
+                                <rect key="frame" x="163" y="283" width="89" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cf4-dH-Map" customClass="DPOTPView" customModule="DPOTPView">
+                                <rect key="frame" x="20" y="327" width="374" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidthTextField">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedBorderWidthTextField">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusTextField">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffsetSizeTextField">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorTextField">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBorderColorTextField">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qea-25-2zH">
+                                <rect key="frame" x="20" y="427" width="374" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Continue">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="otpContinueAction:" destination="oLz-iH-bIq" eventType="touchUpInside" id="Wxj-iD-Lx7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ofc-f0-ciI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="otpView" destination="cf4-dH-Map" id="0g6-Ka-Vg8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnz-r0-zW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="115"/>
         </scene>
         <!--Privacy Policy Page-->
         <scene sceneID="jnF-lN-uD4">
