@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     @IBAction func continueAtion(_ sender: Any) {
         if mobileTextField.text?.count == 10{
-        let nv = storyboard?.instantiateViewController(withIdentifier: "otpPAge") as! otpPAge
+        let nv = storyboard?.instantiateViewController(withIdentifier: "otpPAg") as! otpPAg
             navigationController?.pushViewController(nv, animated: true)
         }
         else{

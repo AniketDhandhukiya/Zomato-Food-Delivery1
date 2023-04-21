@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		C61ACF3329EFBCD9004CB5D2 /* OTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61ACF3229EFBCD9004CB5D2 /* OTP.swift */; };
 		C61ACF3629EFBD2A004CB5D2 /* DPOTPView in Frameworks */ = {isa = PBXBuildFile; productRef = C61ACF3529EFBD2A004CB5D2 /* DPOTPView */; };
-		C61ACF3829EFBD63004CB5D2 /* otpPAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61ACF3729EFBD63004CB5D2 /* otpPAge.swift */; };
+		C61ACF3829EFBD63004CB5D2 /* otpPAg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61ACF3729EFBD63004CB5D2 /* otpPAg.swift */; };
 		C6686BD029EE77CA00C8DF6D /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6686BCF29EE77CA00C8DF6D /* CollectionViewCell2.swift */; };
-		C66A888929ED109400BD25D3 /* zomatoMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A888829ED109400BD25D3 /* zomatoMainPage.swift */; };
+		C66A888929ED109400BD25D3 /* zomatoMainPag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A888829ED109400BD25D3 /* zomatoMainPag.swift */; };
 		C66A888B29ED216000BD25D3 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A888A29ED216000BD25D3 /* CollectionViewCell1.swift */; };
+		C66E93554094997E00AEBDBC /* CollectionViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E93544094997E00AEBDBC /* CollectionViewCell3.swift */; };
 		C6A64C4829E92F35004FF6DB /* termsOfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4729E92F35004FF6DB /* termsOfPage.swift */; };
 		C6A64C4A29E92F50004FF6DB /* privacyPolicyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4929E92F50004FF6DB /* privacyPolicyPage.swift */; };
 		C6A64C4C29E92F5F004FF6DB /* contentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4B29E92F5F004FF6DB /* contentPage.swift */; };
 		C6A64C4E29E93B77004FF6DB /* locationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4D29E93B77004FF6DB /* locationPage.swift */; };
+		C6BD1FC829F112F700CB1F0E /* zomatoMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BD1FC729F112F700CB1F0E /* zomatoMainPage.swift */; };
 		C6F2A58329E7D3800010A3A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2A58229E7D3800010A3A4 /* AppDelegate.swift */; };
 		C6F2A58529E7D3800010A3A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2A58429E7D3800010A3A4 /* SceneDelegate.swift */; };
 		C6F2A58729E7D3800010A3A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2A58629E7D3800010A3A4 /* ViewController.swift */; };
@@ -28,14 +30,16 @@
 
 /* Begin PBXFileReference section */
 		C61ACF3229EFBCD9004CB5D2 /* OTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP.swift; sourceTree = "<group>"; };
-		C61ACF3729EFBD63004CB5D2 /* otpPAge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otpPAge.swift; sourceTree = "<group>"; };
+		C61ACF3729EFBD63004CB5D2 /* otpPAg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otpPAg.swift; sourceTree = "<group>"; };
 		C6686BCF29EE77CA00C8DF6D /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
-		C66A888829ED109400BD25D3 /* zomatoMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zomatoMainPage.swift; sourceTree = "<group>"; };
+		C66A888829ED109400BD25D3 /* zomatoMainPag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zomatoMainPag.swift; sourceTree = "<group>"; };
 		C66A888A29ED216000BD25D3 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
+		C66E93544094997E00AEBDBC /* CollectionViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell3.swift; sourceTree = "<group>"; };
 		C6A64C4729E92F35004FF6DB /* termsOfPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = termsOfPage.swift; sourceTree = "<group>"; };
 		C6A64C4929E92F50004FF6DB /* privacyPolicyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privacyPolicyPage.swift; sourceTree = "<group>"; };
 		C6A64C4B29E92F5F004FF6DB /* contentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentPage.swift; sourceTree = "<group>"; };
 		C6A64C4D29E93B77004FF6DB /* locationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationPage.swift; sourceTree = "<group>"; };
+		C6BD1FC729F112F700CB1F0E /* zomatoMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zomatoMainPage.swift; sourceTree = "<group>"; };
 		C6F2A57F29E7D3800010A3A4 /* Zomato-Food Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zomato-Food Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F2A58229E7D3800010A3A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6F2A58429E7D3800010A3A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 		C6F2A57629E7D3800010A3A4 = {
 			isa = PBXGroup;
 			children = (
+				C6BD1FC729F112F700CB1F0E /* zomatoMainPage.swift */,
 				C6F2A58129E7D3800010A3A4 /* Zomato-Food Delivery */,
 				C6F2A58029E7D3800010A3A4 /* Products */,
 			);
@@ -82,11 +87,12 @@
 				C6F2A58429E7D3800010A3A4 /* SceneDelegate.swift */,
 				C6F2A58629E7D3800010A3A4 /* ViewController.swift */,
 				C6F2A58829E7D3800010A3A4 /* Main.storyboard */,
-				C61ACF3729EFBD63004CB5D2 /* otpPAge.swift */,
+				C66E93544094997E00AEBDBC /* CollectionViewCell3.swift */,
+				C61ACF3729EFBD63004CB5D2 /* otpPAg.swift */,
 				C61ACF3229EFBCD9004CB5D2 /* OTP.swift */,
 				C6686BCF29EE77CA00C8DF6D /* CollectionViewCell2.swift */,
 				C66A888A29ED216000BD25D3 /* CollectionViewCell1.swift */,
-				C66A888829ED109400BD25D3 /* zomatoMainPage.swift */,
+				C66A888829ED109400BD25D3 /* zomatoMainPag.swift */,
 				C6A64C4D29E93B77004FF6DB /* locationPage.swift */,
 				C6F2A58E29E7D3810010A3A4 /* Assets.xcassets */,
 				C6F2A59029E7D3810010A3A4 /* LaunchScreen.storyboard */,
@@ -179,12 +185,14 @@
 				C66A888B29ED216000BD25D3 /* CollectionViewCell1.swift in Sources */,
 				C6A64C4C29E92F5F004FF6DB /* contentPage.swift in Sources */,
 				C6F2A58729E7D3800010A3A4 /* ViewController.swift in Sources */,
+				C6BD1FC829F112F700CB1F0E /* zomatoMainPage.swift in Sources */,
 				C61ACF3329EFBCD9004CB5D2 /* OTP.swift in Sources */,
 				C6A64C4A29E92F50004FF6DB /* privacyPolicyPage.swift in Sources */,
 				C6A64C4E29E93B77004FF6DB /* locationPage.swift in Sources */,
 				C6F2A58329E7D3800010A3A4 /* AppDelegate.swift in Sources */,
-				C61ACF3829EFBD63004CB5D2 /* otpPAge.swift in Sources */,
-				C66A888929ED109400BD25D3 /* zomatoMainPage.swift in Sources */,
+				C61ACF3829EFBD63004CB5D2 /* otpPAg.swift in Sources */,
+				C66A888929ED109400BD25D3 /* zomatoMainPag.swift in Sources */,
+				C66E93554094997E00AEBDBC /* CollectionViewCell3.swift in Sources */,
 				C6A64C4829E92F35004FF6DB /* termsOfPage.swift in Sources */,
 				C6686BD029EE77CA00C8DF6D /* CollectionViewCell2.swift in Sources */,
 				C6F2A58529E7D3800010A3A4 /* SceneDelegate.swift in Sources */,

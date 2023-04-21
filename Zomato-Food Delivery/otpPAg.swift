@@ -7,7 +7,7 @@
 
 import UIKit
 
-class otpPAge: UIViewController {
+class otpPAg: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class otpPAge: UIViewController {
     
     @IBAction func otpContinueAction(_ sender: Any) {
         if otpView.validate(){
-            let nv = storyboard?.instantiateViewController(withIdentifier: "zomatoMainPage") as! zomatoMainPage
+            let nv = storyboard?.instantiateViewController(withIdentifier: "zomatoMainPag") as! zomatoMainPag
             navigationController?.pushViewController(nv, animated: true)
         }
         
