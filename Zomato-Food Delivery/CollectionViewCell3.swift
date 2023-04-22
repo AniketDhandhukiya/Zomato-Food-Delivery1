@@ -11,4 +11,6 @@ class CollectionViewCell3: UICollectionViewCell {
     
     @IBOutlet weak var labelOnImage: UILabel!
     @IBOutlet weak var imageViewres: UIImageView!
+    @IBOutlet weak var rateStar: UILabel!
+
 }
