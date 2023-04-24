@@ -17,9 +17,8 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
     @IBOutlet weak var cv2: UICollectionView!
     @IBOutlet weak var cv: UICollectionView!
     var imgarray = [11,12,13,14,15,16,17,18,19,20,21,22]
-    var restauArray = [31,32,33,34,35,36,37,38,39,40,41]
-    var labelArray = ["J D Restaurants","Shree Sai Restaurants","McDoonald's","Mahadev Dalbaati","Taste Of Bhagwati","Chandan Bhojnalaya","Sarvottam Restaurants","Jay Jalaram Thali","Center Point","Tulsi Restaurant","Punjabi Dhaba"]
-    
+    var restauArray = [4,32,33,6,35,36,37,38,39,40,5,1,2,3,7,8,9,10]
+    var labelArray = ["J D Restaurants","Shree Sai Restaurants","McDoonald's","Mahadev Dalbaati","Taste Of Bhagwati","Chandan Bhojnalaya","Sarvottam Restaurants","Jay Jalaram Thali","Center Point","Tulsi Restaurant","Punjabi Dhaba","La Pino'z Pizza","Jeevandhara Restaurant","MK Sandwich","Octant Pizza","Anand Dhosa","Sasuma Gujarati Thali","Gita's Burger"]
     var showArr : [MyItem] = []
     let backupArr : [MyItem] = [
         MyItem(image: "1", name: "La Pino'z Pizza", time: "25-30 Min"),
@@ -32,12 +31,23 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
         MyItem(image: "8", name: "Anand Dhosa", time: "35-40 Min"),
         MyItem(image: "9", name: "Sasuma Gujarati Thali", time: "40-50 Min"),
         MyItem(image: "10", name: "Gita's Burger", time: "25-30 Min"),
+        MyItem(image: "32", name: "Shree Sai Restaurants", time: "35-40 Min"),
+        MyItem(image: "33", name: "McDoonald's", time: "25-30 Min"),
+        //MyItem(image: "34", name: "Mahadev Dalbaati", time: "25-30 Min"),
+        MyItem(image: "35", name: "Taste Of Bhagwati", time: "35-45 Min"),
+        MyItem(image: "36", name: "Chandan Bhojnalaya", time: "30-45 Min"),
+        MyItem(image: "37", name: "Sarvottam Restaurants", time: "30-45 Min"),
+        MyItem(image: "38", name: "Jay Jalaram Thali", time: "30-45 Min"),
+        MyItem(image: "39", name: "Center Point", time: "30-45 Min"),
+        MyItem(image: "40", name: "Tulsi Restaurant", time: "30-45 Min"),
+
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         showArr = backupArr
         cv.reloadData()
+        cv3.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -45,7 +55,7 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
             return showArr.count
         }
        else if collectionView == self.cv3{
-            return labelArray.count
+            return showArr.count
         }
         else {
             return imgarray.count
@@ -69,6 +79,7 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
         }
         
         else if collectionView == self.cv3{
+            //let item2 = showArr[indexPath.row]
             let cell3 = cv3.dequeueReusableCell(withReuseIdentifier: "cell3", for: indexPath) as! CollectionViewCell3
             cell3.layer.cornerRadius = 30
             cell3.layer.masksToBounds = true
@@ -112,7 +123,7 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
             }
         }
         cv.reloadData()
-        
+        cv3.reloadData()
     }
     
     
