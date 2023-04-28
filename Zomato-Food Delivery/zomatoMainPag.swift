@@ -47,7 +47,7 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
         super.viewDidLoad()
         showArr = backupArr
         cv.reloadData()
-        cv3.reloadData()
+        //cv3.reloadData()        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -123,7 +123,7 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
             }
         }
         cv.reloadData()
-        cv3.reloadData()
+        //cv3.reloadData()
     }
     
     
