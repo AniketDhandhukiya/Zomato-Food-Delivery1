@@ -16,6 +16,7 @@
 		C66A888929ED109400BD25D3 /* zomatoMainPag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A888829ED109400BD25D3 /* zomatoMainPag.swift */; };
 		C66A888B29ED216000BD25D3 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A888A29ED216000BD25D3 /* CollectionViewCell1.swift */; };
 		C66E93554094997E00AEBDBC /* CollectionViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E93544094997E00AEBDBC /* CollectionViewCell3.swift */; };
+		C68A37A129FCCC4E00C63B3B /* CollectionViewCell11.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A37A029FCCC4E00C63B3B /* CollectionViewCell11.swift */; };
 		C6A64C4829E92F35004FF6DB /* termsOfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4729E92F35004FF6DB /* termsOfPage.swift */; };
 		C6A64C4A29E92F50004FF6DB /* privacyPolicyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4929E92F50004FF6DB /* privacyPolicyPage.swift */; };
 		C6A64C4C29E92F5F004FF6DB /* contentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A64C4B29E92F5F004FF6DB /* contentPage.swift */; };
@@ -40,6 +41,7 @@
 		C66A888829ED109400BD25D3 /* zomatoMainPag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zomatoMainPag.swift; sourceTree = "<group>"; };
 		C66A888A29ED216000BD25D3 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
 		C66E93544094997E00AEBDBC /* CollectionViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell3.swift; sourceTree = "<group>"; };
+		C68A37A029FCCC4E00C63B3B /* CollectionViewCell11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell11.swift; sourceTree = "<group>"; };
 		C6A64C4729E92F35004FF6DB /* termsOfPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = termsOfPage.swift; sourceTree = "<group>"; };
 		C6A64C4929E92F50004FF6DB /* privacyPolicyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privacyPolicyPage.swift; sourceTree = "<group>"; };
 		C6A64C4B29E92F5F004FF6DB /* contentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentPage.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				C6F2A58429E7D3800010A3A4 /* SceneDelegate.swift */,
 				C6F2A58629E7D3800010A3A4 /* ViewController.swift */,
 				C6F2A58829E7D3800010A3A4 /* Main.storyboard */,
+				C68A37A029FCCC4E00C63B3B /* CollectionViewCell11.swift */,
 				C62D213029F8C76D00EBC0EF /* diningPage.swift */,
 				C63DADA229F775A500876654 /* TabBar.swift */,
 				C66E93544094997E00AEBDBC /* CollectionViewCell3.swift */,
@@ -212,6 +215,7 @@
 				C6F2A58529E7D3800010A3A4 /* SceneDelegate.swift in Sources */,
 				C62D213129F8C76D00EBC0EF /* diningPage.swift in Sources */,
 				C6F2A58D29E7D3800010A3A4 /* Zomato_Food_Delivery.xcdatamodeld in Sources */,
+				C68A37A129FCCC4E00C63B3B /* CollectionViewCell11.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

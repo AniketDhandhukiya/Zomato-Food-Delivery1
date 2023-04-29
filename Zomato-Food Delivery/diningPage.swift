@@ -1,8 +1,36 @@
 
 import UIKit
 
-class diningPage: UIViewController {
+struct items{
+    var img = ""
+    var name = ""
+    var location = ""
+}
+
+class diningPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
+    
+    
+    @IBOutlet weak var cv1: UICollectionView!
+    
+    var showArr : [items] = []
+    var backupArr : [items] = [
+        items(img: "71", name: "", location: ""),
+        items(img: "72", name: "", location: ""),
+        items(img: "73", name: "", location: ""),
+        items(img: "74", name: "", location: ""),
+        items(img: "75", name: "", location: ""),
+        items(img: "76", name: "", location: ""),
+        items(img: "77", name: "", location: ""),
+        items(img: "78", name: "", location: ""),
+        items(img: "79", name: "", location: ""),
+        items(img: "80", name: "", location: ""),
+//        items(img: <#T##String#>, name: <#T##String#>, location: <#T##String#>),
+//        items(img: <#T##String#>, name: <#T##String#>, location: <#T##String#>),
+//        items(img: <#T##String#>, name: <#T##String#>, location: <#T##String#>),
+//        items(img: <#T##String#>, name: <#T##String#>, location: <#T##String#>),
+//        items(img: <#T##String#>, name: <#T##String#>, location: <#T##String#>),
+    ]
     
     @IBOutlet weak var iv1: UIImageView!
     @IBOutlet weak var iv2: UIImageView!
@@ -31,5 +59,13 @@ class diningPage: UIViewController {
         iv6.layer.masksToBounds = true
         iv7.layer.cornerRadius = 10
         iv7.layer.masksToBounds = true
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return backupArr.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
     }
 }
