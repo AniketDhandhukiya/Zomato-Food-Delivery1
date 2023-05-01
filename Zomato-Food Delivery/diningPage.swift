@@ -15,16 +15,16 @@ class diningPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
     
     var showArr : [items] = []
     var backupArr : [items] = [
-        items(img: "71", name: "", location: ""),
-        items(img: "72", name: "", location: ""),
-        items(img: "73", name: "", location: ""),
-        items(img: "74", name: "", location: ""),
-        items(img: "75", name: "", location: ""),
-        items(img: "76", name: "", location: ""),
-        items(img: "77", name: "", location: ""),
-        items(img: "78", name: "", location: ""),
-        items(img: "79", name: "", location: ""),
-        items(img: "80", name: "", location: ""),
+        items(img: "71", name: "Banana Patra", location: "Varachha, Surat"),
+        items(img: "72", name: "Harikrushna Restaurant", location: "Varachha, Surat"),
+        items(img: "73", name: "Hotel Tulsi", location: "Varachha, Surat"),
+        items(img: "74", name: "La pino'z Pizza", location: "Varachha, Surat"),
+        items(img: "75", name: "Sonal Bhel & Fast Food", location: "Varachha, Surat"),
+        items(img: "76", name: "Veggie House", location: "Varachha, Surat"),
+        items(img: "77", name: "Falafel Lovers", location: "Varachha, Surat"),
+        items(img: "78", name: "Bhavnagar Ice Dish Gola - Doctor House", location: "Varachha, Surat"),
+        items(img: "79", name: "Jay Ambe Ma Chole Bhature", location: "Varachha, Surat"),
+        items(img: "80", name: "Laxmi Food Inn", location: "Varachha, Surat"),
 //        items(img: <#T##String#>, name: <#T##String#>, location: <#T##String#>),
 //        items(img: <#T##String#>, name: <#T##String#>, location: <#T##String#>),
 //        items(img: <#T##String#>, name: <#T##String#>, location: <#T##String#>),
@@ -66,6 +66,19 @@ class diningPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        var item = backupArr[indexPath.row]
+        let cell = cv1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        cell.view.layer.cornerRadius = 10
+        cell.view.layer.masksToBounds = true
+        cell.imageview.layer.cornerRadius = 10
+        cell.imageview.layer.masksToBounds = true
+        cell.imageview.image = UIImage(named: item.img.description)
+        cell.label11.text = item.name
+        cell.label22.text = item.location
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 398.5, height: 304)
     }
 }
