@@ -7,8 +7,9 @@ struct items{
     var location = ""
 }
 
-class diningPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class diningPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UISearchBarDelegate {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     
     
     @IBOutlet weak var cv1: UICollectionView!
@@ -59,14 +60,16 @@ class diningPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
         iv6.layer.masksToBounds = true
         iv7.layer.cornerRadius = 10
         iv7.layer.masksToBounds = true
+        showArr = backupArr
+        cv1.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return backupArr.count
+        return showArr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var item = backupArr[indexPath.row]
+        var item = showArr[indexPath.row]
         let cell = cv1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.view.layer.cornerRadius = 10
         cell.view.layer.masksToBounds = true
@@ -80,5 +83,20 @@ class diningPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 398.5, height: 304)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == ""{
+            showArr = backupArr
+        }
+        else{
+            showArr = []
+            for i in backupArr{
+                if i.name.contains(searchBar.text!){
+                    showArr.append(i)
+                }
+            }
+        }
+        cv1.reloadData()                       
     }
 }
