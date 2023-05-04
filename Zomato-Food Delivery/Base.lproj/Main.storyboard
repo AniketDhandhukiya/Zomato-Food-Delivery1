@@ -1077,6 +1077,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
         <scene sceneID="j5O-La-8Ax">
             <objects>
                 <tabBarController storyboardIdentifier="TabBar" id="LkA-d8-9hm" customClass="TabBar" customModule="Zomato_Food_Delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" alpha="0.75" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="l9q-hJ-N2J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1088,6 +1089,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                         <outlet property="tabBar" destination="l9q-hJ-N2J" id="WR1-bV-qNJ"/>
                         <segue destination="2gm-ps-jXN" kind="relationship" relationship="viewControllers" id="1S5-JZ-LYF"/>
                         <segue destination="BAU-ZY-pCv" kind="relationship" relationship="viewControllers" id="cDU-6m-y3q"/>
+                        <segue destination="ZHH-7P-1Og" kind="relationship" relationship="viewControllers" id="XZh-FC-C6k"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yl6-o7-d2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1256,7 +1258,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                             <rect key="frame" x="0.0" y="0.0" width="405" height="235"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b61-dc-YAA">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b61-dc-YAA">
                                                                     <rect key="frame" x="0.0" y="0.0" width="405" height="235"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="235" id="CEG-Ga-NX7"/>
@@ -1440,7 +1442,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5S3-uT-0mH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6149" y="-198"/>
+            <point key="canvasLocation" x="6148" y="-585"/>
         </scene>
         <!--Dining Page-->
         <scene sceneID="eW7-e4-F8B">
@@ -1622,7 +1624,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                             <rect key="frame" x="0.0" y="0.0" width="398.5" height="304"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tV7-Jv-xre">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tV7-Jv-xre">
                                                                     <rect key="frame" x="0.0" y="0.0" width="400" height="206"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 </imageView>
@@ -1787,7 +1789,71 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7G-Mu-j31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6147.826086956522" y="533.70535714285711"/>
+            <point key="canvasLocation" x="6148" y="190"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hj7-2O-41Y">
+            <objects>
+                <viewController id="0dc-AB-eDN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JG2-e5-NZj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="yMZ-gF-nua">
+                                <rect key="frame" x="20" y="44" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Xo8-th-gQf"/>
+                                    <constraint firstAttribute="width" constant="32" id="obT-tU-ySt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-5z-8cL">
+                                <rect key="frame" x="60" y="44" width="48" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Qkm-b8-lkq"/>
+                                    <constraint firstAttribute="height" constant="21" id="nEI-yB-ioE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="KKZ-GC-HyY">
+                                <rect key="frame" x="107" y="48" width="32" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="eT4-tj-vBA"/>
+                                    <constraint firstAttribute="width" constant="32" id="h9V-Zf-1sd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16, maheshvar soc. Varachha road Surat-6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrt-D1-Let">
+                                <rect key="frame" x="60" y="64" width="337" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="Nok-oI-2kP"/>
+                                    <constraint firstAttribute="height" constant="15" id="ub7-Ax-Eys"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wel-Dk-LoJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aeI-5z-8cL" firstAttribute="leading" secondItem="yMZ-gF-nua" secondAttribute="trailing" constant="8" symbolic="YES" id="5Fy-fx-WHt"/>
+                            <constraint firstItem="Wel-Dk-LoJ" firstAttribute="trailing" secondItem="Mrt-D1-Let" secondAttribute="trailing" constant="17" id="8Vj-2E-2UD"/>
+                            <constraint firstItem="aeI-5z-8cL" firstAttribute="top" secondItem="Wel-Dk-LoJ" secondAttribute="top" id="O6Q-LW-Usu"/>
+                            <constraint firstItem="KKZ-GC-HyY" firstAttribute="leading" secondItem="yMZ-gF-nua" secondAttribute="trailing" constant="55" id="Que-3Q-hNN"/>
+                            <constraint firstItem="Wel-Dk-LoJ" firstAttribute="trailing" secondItem="KKZ-GC-HyY" secondAttribute="trailing" constant="275" id="Rlq-rJ-9VX"/>
+                            <constraint firstItem="yMZ-gF-nua" firstAttribute="top" secondItem="Wel-Dk-LoJ" secondAttribute="top" id="dGB-qa-Drr"/>
+                            <constraint firstItem="KKZ-GC-HyY" firstAttribute="top" secondItem="Wel-Dk-LoJ" secondAttribute="top" constant="4" id="gVR-vP-iLy"/>
+                            <constraint firstItem="yMZ-gF-nua" firstAttribute="leading" secondItem="Wel-Dk-LoJ" secondAttribute="leading" constant="20" id="ozz-go-lma"/>
+                            <constraint firstItem="Mrt-D1-Let" firstAttribute="top" secondItem="KKZ-GC-HyY" secondAttribute="bottom" id="s0M-9b-BQS"/>
+                            <constraint firstItem="Mrt-D1-Let" firstAttribute="leading" secondItem="yMZ-gF-nua" secondAttribute="trailing" constant="8" symbolic="YES" id="wkc-4E-NPC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2yT-te-yWA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPq-mh-ZYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6147.826086956522" y="1041.9642857142858"/>
         </scene>
         <!--OtpP Ag-->
         <scene sceneID="AMQ-YT-9CU">
@@ -2270,9 +2336,10 @@ Please email legal@zomato.com if you witness any behavior not in compliance with
         <!--Navigation Controller-->
         <scene sceneID="Rg1-EV-uB4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3Ao-N8-ZwB" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ao-N8-ZwB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vIe-xZ-vve">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2284,11 +2351,11 @@ Please email legal@zomato.com if you witness any behavior not in compliance with
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
         </scene>
-        <!--Item-->
+        <!--Delivery-->
         <scene sceneID="VOg-o8-uDB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2gm-ps-jXN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="fast-delivery (3)" selectedImage="fast-delivery (3)" id="fRG-aL-K0P"/>
+                    <tabBarItem key="tabBarItem" title="Delivery" image="fast-delivery (3)" selectedImage="fast-delivery (3)" id="fRG-aL-K0P"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="86W-A8-uBn">
                         <autoresizingMask key="autoresizingMask"/>
@@ -2303,13 +2370,13 @@ Please email legal@zomato.com if you witness any behavior not in compliance with
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRL-3J-nDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5251" y="-198"/>
+            <point key="canvasLocation" x="5019" y="-585"/>
         </scene>
-        <!--Item-->
+        <!--Dining-->
         <scene sceneID="L6o-8b-Vpp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="BAU-ZY-pCv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="dinner" selectedImage="dinner" id="Hdi-Kf-odX"/>
+                    <tabBarItem key="tabBarItem" title="Dining" image="dinner" selectedImage="dinner" id="Hdi-Kf-odX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h2z-6J-OHW">
                         <autoresizingMask key="autoresizingMask"/>
@@ -2321,7 +2388,25 @@ Please email legal@zomato.com if you witness any behavior not in compliance with
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0L5-dY-lDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5251" y="534"/>
+            <point key="canvasLocation" x="5019" y="190"/>
+        </scene>
+        <!--Money-->
+        <scene sceneID="3fM-MJ-sDu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZHH-7P-1Og" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Money" image="wallet (1)" selectedImage="wallet (1)" id="h7R-ae-7wd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pdz-Z4-Izs">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0dc-AB-eDN" kind="relationship" relationship="rootViewController" id="bzx-wo-yWW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6R-DK-t4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5019" y="1043"/>
         </scene>
     </scenes>
     <resources>
@@ -2342,6 +2427,7 @@ Please email legal@zomato.com if you witness any behavior not in compliance with
         <image name="man-lost-the-location-png" width="1920" height="1920"/>
         <image name="offer" width="180" height="125"/>
         <image name="placeholder" width="32" height="32"/>
+        <image name="wallet (1)" width="24" height="24"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
