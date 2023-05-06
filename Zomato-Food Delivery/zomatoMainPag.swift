@@ -83,8 +83,10 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
             let cell3 = cv3.dequeueReusableCell(withReuseIdentifier: "cell3", for: indexPath) as! CollectionViewCell3
             cell3.layer.cornerRadius = 30
             cell3.layer.masksToBounds = true
-            cell3.layer.borderColor = UIColor.red.cgColor
-            cell3.layer.borderWidth = 1
+            cell3.view22.layer.cornerRadius = 15
+            cell3.view22.layer.masksToBounds = true
+//            cell3.layer.borderColor = UIColor.red.cgColor
+//            cell3.layer.borderWidth = 1
             cell3.rateStar.layer.cornerRadius = 5
             cell3.rateStar.layer.masksToBounds = true
             cell3.labelOnImage.text = labelArray[indexPath.row]
@@ -104,7 +106,7 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
             return CGSize(width: 235, height: 91)
         }
         else if collectionView == self.cv3{
-            return CGSize(width: 391, height: 184)
+            return CGSize(width: 405, height: 235)
         }
         return CGSize(width: 96, height: 89)
     }

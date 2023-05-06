@@ -11,7 +11,6 @@ class moneyPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
 

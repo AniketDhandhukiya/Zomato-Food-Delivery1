@@ -1266,6 +1266,16 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="235" id="Yt3-Ly-uhd"/>
                                                                     </constraints>
                                                                 </imageView>
+                                                                <visualEffectView opaque="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Bb-Qn-cAl">
+                                                                    <rect key="frame" x="-1" y="161" width="405" height="74"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ymj-xI-lox">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="405" height="74"/>
+                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    </view>
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                    <blurEffect style="regular"/>
+                                                                </visualEffectView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhQ-W6-6N0">
                                                                     <rect key="frame" x="8" y="176" width="307" height="21"/>
                                                                     <constraints>
@@ -1283,7 +1293,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                                         <constraint firstAttribute="width" constant="389" id="gjk-j7-pFx"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.1 ⭐️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ta8-fv-XAY">
@@ -1319,6 +1329,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                             <outlet property="imageViewres" destination="b61-dc-YAA" id="32H-tU-TBs"/>
                                                             <outlet property="labelOnImage" destination="fhQ-W6-6N0" id="pZb-EN-a6R"/>
                                                             <outlet property="rateStar" destination="Ta8-fv-XAY" id="KqS-5Z-6a3"/>
+                                                            <outlet property="view22" destination="6Bb-Qn-cAl" id="n8m-lq-Gfu"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
@@ -1442,7 +1453,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5S3-uT-0mH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6148" y="-585"/>
+            <point key="canvasLocation" x="6147.826086956522" y="-585.26785714285711"/>
         </scene>
         <!--Dining Page-->
         <scene sceneID="eW7-e4-F8B">
@@ -1632,7 +1643,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                                     <rect key="frame" x="1" y="200" width="399" height="100"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6e-7o-InB">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6e-7o-InB">
                                                                             <rect key="frame" x="8" y="16" width="383" height="33"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
