@@ -70,7 +70,7 @@ class diningPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var item = showArr[indexPath.row]
-        let cell = cv1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        let cell = cv1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell222
         cell.view.layer.cornerRadius = 20
         cell.view.layer.masksToBounds = true
         cell.imageview.layer.cornerRadius = 10

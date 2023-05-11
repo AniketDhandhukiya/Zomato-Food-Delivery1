@@ -18,6 +18,7 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
     @IBOutlet weak var cv: UICollectionView!
     var imgarray = [11,12,13,14,15,16,17,18,19,20,21,22]
     var restauArray = [4,32,33,6,35,36,37,38,39,40,5,1,2,3,7,8,9,10]
+    var selectedCell = 0
     var labelArray = ["J D Restaurants","Shree Sai Restaurants","McDoonald's","Mahadev Dalbaati","Taste Of Bhagwati","Chandan Bhojnalaya","Sarvottam Restaurants","Jay Jalaram Thali","Center Point","Tulsi Restaurant","Punjabi Dhaba","La Pino'z Pizza","Jeevandhara Restaurant","MK Sandwich","Octant Pizza","Anand Dhosa","Sasuma Gujarati Thali","Gita's Burger"]
     var showArr : [MyItem] = []
     let backupArr : [MyItem] = [
@@ -128,5 +129,11 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
         //cv3.reloadData()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+        let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+       present(nv, animated: false)
+        }
+    }
     
 }

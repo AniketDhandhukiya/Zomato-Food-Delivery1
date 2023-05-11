@@ -1455,6 +1455,115 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
             </objects>
             <point key="canvasLocation" x="6147.826086956522" y="-585.26785714285711"/>
         </scene>
+        <!--Controller5 View Controller-->
+        <scene sceneID="7ye-oC-rdU">
+            <objects>
+                <viewController storyboardIdentifier="controller5ViewController" id="AHi-a8-AA1" customClass="controller5ViewController" customModule="Zomato_Food_Delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ROb-Ie-NsH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="I9K-rh-4iQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YCt-GF-wk9"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKS-Ir-epb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kw0-ce-LFP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GnQ-g7-3g6">
+                                                <rect key="frame" x="8" y="0.0" width="398" height="140"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La Pino'z Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnJ-zr-vqJ">
+                                                        <rect key="frame" x="8" y="8" width="382" height="32"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="53y-As-EWr"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="vXW-Ib-JTR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza, Pasta, Italian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beg-go-8iR">
+                                                        <rect key="frame" x="8" y="44" width="382" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="2dy-qw-CNH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Varachha, Surat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiG-sz-lnO">
+                                                        <rect key="frame" x="8" y="68" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="FnJ-zr-vqJ" firstAttribute="leading" secondItem="GnQ-g7-3g6" secondAttribute="leading" constant="8" id="0Y3-p9-S1A"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FnJ-zr-vqJ" secondAttribute="trailing" constant="8" id="0gF-nE-FhF"/>
+                                                    <constraint firstItem="FnJ-zr-vqJ" firstAttribute="top" secondItem="GnQ-g7-3g6" secondAttribute="top" constant="8" id="1y7-Ii-xeO"/>
+                                                    <constraint firstItem="beg-go-8iR" firstAttribute="top" secondItem="FnJ-zr-vqJ" secondAttribute="bottom" constant="4" id="BZ0-Ht-MbI"/>
+                                                    <constraint firstItem="KiG-sz-lnO" firstAttribute="leading" secondItem="GnQ-g7-3g6" secondAttribute="leading" constant="8" id="Dga-I5-OVP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="beg-go-8iR" secondAttribute="trailing" constant="8" id="JO2-e8-WPR"/>
+                                                    <constraint firstItem="FnJ-zr-vqJ" firstAttribute="leading" secondItem="GnQ-g7-3g6" secondAttribute="leading" constant="8" id="OFd-5s-z9S"/>
+                                                    <constraint firstAttribute="trailing" secondItem="KiG-sz-lnO" secondAttribute="trailing" constant="8" id="Q2i-Hd-vze"/>
+                                                    <constraint firstItem="beg-go-8iR" firstAttribute="leading" secondItem="GnQ-g7-3g6" secondAttribute="leading" constant="8" id="QEY-vF-7s2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FnJ-zr-vqJ" secondAttribute="trailing" constant="8" id="X5F-WQ-voN"/>
+                                                    <constraint firstItem="KiG-sz-lnO" firstAttribute="top" secondItem="beg-go-8iR" secondAttribute="bottom" constant="3" id="c10-zf-bvN"/>
+                                                    <constraint firstAttribute="height" constant="140" id="kcE-in-Rzy"/>
+                                                    <constraint firstItem="FnJ-zr-vqJ" firstAttribute="top" secondItem="GnQ-g7-3g6" secondAttribute="top" constant="8" id="qei-VG-znW"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="GnQ-g7-3g6" firstAttribute="leading" secondItem="kw0-ce-LFP" secondAttribute="leading" constant="8" id="Osd-ib-538"/>
+                                            <constraint firstAttribute="height" constant="2500" id="QGe-df-acP"/>
+                                            <constraint firstItem="GnQ-g7-3g6" firstAttribute="top" secondItem="kw0-ce-LFP" secondAttribute="top" id="bT3-Qm-lZv"/>
+                                            <constraint firstAttribute="trailing" secondItem="GnQ-g7-3g6" secondAttribute="trailing" constant="8" id="rMJ-9W-nAr"/>
+                                            <constraint firstAttribute="width" constant="414" id="vhc-x9-z8F"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kw0-ce-LFP" secondAttribute="trailing" id="5YD-Qm-AU8"/>
+                                    <constraint firstAttribute="bottom" secondItem="kw0-ce-LFP" secondAttribute="bottom" id="7HL-Qp-3m2"/>
+                                    <constraint firstAttribute="height" constant="808" id="7WG-Gg-jXC"/>
+                                    <constraint firstItem="kw0-ce-LFP" firstAttribute="leading" secondItem="RKS-Ir-epb" secondAttribute="leading" id="Lc0-4f-wGn"/>
+                                    <constraint firstAttribute="width" constant="414" id="a2D-LW-DTx"/>
+                                    <constraint firstItem="kw0-ce-LFP" firstAttribute="top" secondItem="RKS-Ir-epb" secondAttribute="top" id="ngR-7R-LSS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XvG-xm-K1S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kw0-ce-LFP" firstAttribute="width" secondItem="ROb-Ie-NsH" secondAttribute="width" id="3mC-Kz-KGR"/>
+                            <constraint firstItem="RKS-Ir-epb" firstAttribute="top" secondItem="I9K-rh-4iQ" secondAttribute="bottom" id="3tc-JE-vTT"/>
+                            <constraint firstItem="I9K-rh-4iQ" firstAttribute="trailing" secondItem="XvG-xm-K1S" secondAttribute="trailing" id="PXb-8E-mCu"/>
+                            <constraint firstItem="I9K-rh-4iQ" firstAttribute="top" secondItem="XvG-xm-K1S" secondAttribute="top" id="am3-yB-iBJ"/>
+                            <constraint firstItem="RKS-Ir-epb" firstAttribute="trailing" secondItem="XvG-xm-K1S" secondAttribute="trailing" id="fpr-yl-g5C"/>
+                            <constraint firstItem="I9K-rh-4iQ" firstAttribute="leading" secondItem="XvG-xm-K1S" secondAttribute="leading" id="htM-l8-ZLY"/>
+                            <constraint firstAttribute="bottom" secondItem="RKS-Ir-epb" secondAttribute="bottom" id="qRq-8O-sDB"/>
+                            <constraint firstItem="RKS-Ir-epb" firstAttribute="leading" secondItem="XvG-xm-K1S" secondAttribute="leading" id="ugf-ep-84h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="kw0-ce-LFP" id="PZa-Yl-u1s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z18-c3-LlW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6895.652173913044" y="-585.26785714285711"/>
+        </scene>
         <!--Dining Page-->
         <scene sceneID="eW7-e4-F8B">
             <objects>
@@ -1628,7 +1737,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell" reuseIdentifier="cell" id="Ze5-07-pyE" customClass="CollectionViewCell" customModule="Zomato_Food_Delivery" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell" reuseIdentifier="cell" id="Ze5-07-pyE" customClass="CollectionViewCell222" customModule="Zomato_Food_Delivery" customModuleProvider="target">
                                                         <rect key="frame" x="-0.5" y="0.0" width="398.5" height="304"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aks-d8-1y7">
@@ -1801,6 +1910,21 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7G-Mu-j31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6148" y="190"/>
+        </scene>
+        <!--Cellpage-->
+        <scene sceneID="IPP-29-xCM">
+            <objects>
+                <viewController storyboardIdentifier="cellpage" id="dtE-hm-r06" customClass="cellpage" customModule="Zomato_Food_Delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iSh-9r-2l2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BPH-0m-Fw9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPs-aP-myh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7625" y="-585"/>
         </scene>
         <!--Money Page-->
         <scene sceneID="Hj7-2O-41Y">
