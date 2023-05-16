@@ -132,7 +132,7 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == 0 {
         let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
-       present(nv, animated: false)
+            navigationController?.pushViewController(nv, animated: true)
         }
     }
     
