@@ -1,30 +1,43 @@
 
 
+//
 import UIKit
 
 class controller5ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     
-
-    var array = ["1","2","3","4","5","6","7"]
-    var array2 = ["8","9","10","11","12","13","14"]
-    var imgArray = [101,102,103,104,105,106,107]
+    @IBOutlet weak var o3: UILabel!
+    @IBOutlet weak var o2: UILabel!
+    @IBOutlet weak var o1: UILabel!
+    var array1 = [""]
+    var array2 = [""]
+    var array3 = [""]
+    var a = ""
+    var b = ""
+    var c = ""
+   
+    var imgArray : [Int] = []
     @IBOutlet weak var cv1: UICollectionView!
     @IBOutlet weak var view1: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        o1.text = a
+        o2.text = b
+        o3.text = c
         
     }
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return array.count
+        return array1.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cv1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! menuCell
-        cell.lb1.text = array[indexPath.row]
+        cell.imgview1.layer.cornerRadius = 11
+        cell.imgview1.layer.masksToBounds = true
+        cell.lb1.text = array1[indexPath.row]
         cell.lb2.text = array2[indexPath.row]
+        cell.lb3.text = array3[indexPath.row]
         cell.imgview1.image = UIImage(named: imgArray[indexPath.row].description)
         
         return cell
