@@ -174,6 +174,17 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
             nv.b = "Punjabi, Fast Food, South indian"
             nv.c = "Varachha, Surat"
         }
+        else if indexPath.row == 4 {
+        let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+            navigationController?.pushViewController(nv, animated: true)
+            nv.array3 = ["Chunks of cheese simmered in a delicious tomato gravy finished in loads of butter.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","","Our house special Paneer tadka.",""]
+            nv.array2 = ["₹150","₹145","₹310","₹350","₹270","₹250","₹50"]
+            nv.array1 = ["Gujarati Thali","Mysore Masala Dosa","Kaju Curry","Paneer Tikka Masala","Kaju Masala","Veg Paneer Handi","Naan"]
+            nv.imgArray = [701,702,703,704,705,706,707]
+            nv.a = "Punjabi Dhaba"
+            nv.b = "Punjabi"
+            nv.c = "Katargam, Surat"
+        }
     }
     
 }
