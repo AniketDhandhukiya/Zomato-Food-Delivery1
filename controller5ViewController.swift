@@ -35,6 +35,8 @@ class controller5ViewController: UIViewController,UICollectionViewDelegate,UICol
         let cell = cv1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! menuCell
         cell.imgview1.layer.cornerRadius = 11
         cell.imgview1.layer.masksToBounds = true
+        cell.addButton.layer.cornerRadius = 11
+        cell.addButton.layer.masksToBounds = true
         cell.lb1.text = array1[indexPath.row]
         cell.lb2.text = array2[indexPath.row]
         cell.lb3.text = array3[indexPath.row]
