@@ -130,6 +130,8 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == self.cv{
+
         if indexPath.row == 0 {
         let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
             navigationController?.pushViewController(nv, animated: true)
@@ -184,6 +186,64 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
             nv.a = "Punjabi Dhaba"
             nv.b = "Punjabi"
             nv.c = "Katargam, Surat"
+        }
+        else if indexPath.row == 5 {
+        let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+            navigationController?.pushViewController(nv, animated: true)
+            nv.array3 = ["Chunks of cheese simmered in a delicious tomato gravy finished in loads of butter.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","","Our house special Paneer tadka.",""]
+            nv.array2 = ["₹220","₹240","₹280","₹30","₹180","₹210","₹20"]
+            nv.array1 = ["Dal Bati Jumbo","Dal Bati and Churma Combo","Special Dal Bati","Buttermilk","Dry Fruit Churma","Dal churma","Bati"]
+            nv.imgArray = [751,752,753,754,755,756,757]
+            nv.a = "Mahadev Dal Bati"
+            nv.b = "Rajasthani"
+            nv.c = "Magob, Surat"
+        }
+        else if indexPath.row == 6 {
+        let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+            navigationController?.pushViewController(nv, animated: true)
+            nv.array3 = ["Chunks of cheese simmered in a delicious tomato gravy finished in loads of butter.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","","Our house special Paneer tadka.",""]
+            nv.array2 = ["₹220","₹240","₹280","₹30","₹180","₹210","₹20"]
+            nv.array1 = ["Dal Bati Jumbo","Dal Bati and Churma Combo","Special Dal Bati","Buttermilk","Dry Fruit Churma","Dal churma","Bati"]
+            nv.imgArray = [751,752,753,754,755,756,757]
+            nv.a = "Mahadev Dal Bati"
+            nv.b = "Rajasthani"
+            nv.c = "Magob, Surat"
+            }
+        }
+        if collectionView == self.cv2{
+            if indexPath.row == 0{
+                let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+                    navigationController?.pushViewController(nv, animated: true)
+                    nv.array3 = ["Chunks of cheese simmered in a delicious tomato gravy finished in loads of butter.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","","Our house special Paneer tadka.",""]
+                    nv.array2 = ["₹220","₹240","₹280","₹30","₹180","₹210","₹20"]
+                    nv.array1 = ["Dal Bati Jumbo","Dal Bati and Churma Combo","Special Dal Bati","Buttermilk","Dry Fruit Churma","Dal churma","Bati"]
+                    nv.imgArray = [751,752,753,754,755,756,757]
+                    nv.a = "Mahadev Dal Bati"
+                    nv.b = "Rajasthani"
+                    nv.c = "Magob, Surat"
+            }
+            else if indexPath.row == 1{
+                let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+                    navigationController?.pushViewController(nv, animated: true)
+                    nv.array3 = ["[Spicy]House special schezwan sauce with veggies and cheese.","vegetables and cheese loaded with house special dressing.","","Open sub with tandoori and spicy touch with paneer and capsicum.","paneer cubes marianted with tandoori veg.","Our house special Russian salad between twop layers.","An italian classic in a asandwich twist."]
+                    nv.array2 = ["₹231","₹258","₹280","₹131","₹220","₹73","₹240"]
+                    nv.array1 = ["Schezwan Mayo Sandwich","Boss(Best Of Shakti Sandwich)","Mexican","Paneer Tandoori","Russian Mayo Sandwich","Bread Butter","Pizza Sandwich"]
+                    nv.imgArray = [501,502,503,504,505,506,507]
+                    nv.a = "M.K Sandwich"
+                    nv.b = "Sandwich, Fast Food, Beverages"
+                    nv.c = "Mota Varachha, Surat"
+                }
+                else if indexPath.row == 2 {
+                    let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+                        navigationController?.pushViewController(nv, animated: true)
+                        nv.array3 = ["A classic cheesy Margherita Cant go wrong Fat14.3 per 100 g Protein-12.6 per 100 g Carbohydrate-39.2 per 100 g Sugar-0 per 100 g Calories-336 k.calNutritional information per 100g","A classic cheesy Margherita Cant go wrong Fat14.3 per 100 g Protein-12.6 per 100 g Carbohydrate-39.2 per 100 g Sugar-0 per 100 g Calories-336 k.calNutritional information per 100g","A classic cheesy Margherita Cant go wrong Fat14.3 per 100 g Protein-12.6 per 100 g Carbohydrate-39.2 per 100 g Sugar-0 per 100 g Calories-336 k.calNutritional information per 100g","A classic cheesy Margherita Cant go wrong Fat14.3 per 100 g Protein-12.6 per 100 g Carbohydrate-39.2 per 100 g Sugar-0 per 100 g Calories-336 k.calNutritional information per 100g","A classic cheesy Margherita Cant go wrong Fat14.3 per 100 g Protein-12.6 per 100 g Carbohydrate-39.2 per 100 g Sugar-0 per 100 g Calories-336 k.calNutritional information per 100g","A classic cheesy Margherita Cant go wrong Fat14.3 per 100 g Protein-12.6 per 100 g Carbohydrate-39.2 per 100 g Sugar-0 per 100 g Calories-336 k.calNutritional information per 100g","A classic cheesy Margherita Cant go wrong Fat14.3 per 100 g Protein-12.6 per 100 g Carbohydrate-39.2 per 100 g Sugar-0 per 100 g Calories-336 k.calNutritional information per 100g"]
+                        nv.array2 = ["₹145","₹275","₹195","₹139","₹195","₹79","₹295"]
+                        nv.array1 = ["Margherita Pizza","7 Cheesy Pizza","Spicy Cheesy","Capsicum & Paneer Pizza","Farm Villa Pizza","Capsicum Pizza","Perry Perry Pizza"]
+                        nv.imgArray = [101,102,103,104,105,106,107]
+                        nv.a = "La Pino'z Pizza"
+                        nv.b = "Pizza, Pasta, Italian"
+                        nv.c = "Varachha, Surat"
+            }
         }
     }
     
