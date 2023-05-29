@@ -1071,12 +1071,13 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8he-Zz-02s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487" y="115"/>
+            <point key="canvasLocation" x="1814" y="115"/>
         </scene>
         <!--Tab Bar-->
         <scene sceneID="j5O-La-8Ax">
             <objects>
                 <tabBarController storyboardIdentifier="TabBar" id="LkA-d8-9hm" customClass="TabBar" customModule="Zomato_Food_Delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="184-QY-N89"/>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="l9q-hJ-N2J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -1104,7 +1105,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCv-nk-ITi">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCv-nk-ITi">
                                 <rect key="frame" x="0.0" y="44" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcp-Ob-76a">
@@ -1241,7 +1242,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RMZ-gT-qRp">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RMZ-gT-qRp">
                                                 <rect key="frame" x="-27" y="698" width="466" height="1802"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="25" minimumInteritemSpacing="10" id="uRX-Kj-rcV">
@@ -1562,6 +1563,9 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                                                         <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                                                         <color key="baseForegroundColor" red="1" green="0.074743433489999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </buttonConfiguration>
+                                                                    <connections>
+                                                                        <action selector="addbutton:" destination="rRG-KP-j1l" eventType="touchUpInside" id="WfE-UF-PTl"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-Ne-POl">
                                                                     <rect key="frame" x="8" y="121" width="203" height="95"/>
@@ -2174,6 +2178,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="otpContinueAction:" destination="oLz-iH-bIq" eventType="touchUpInside" id="Wxj-iD-Lx7"/>
+                                    <segue destination="LkA-d8-9hm" kind="push" id="oPO-mo-q0h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2186,7 +2191,7 @@ TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE ZOMATO 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vnz-r0-zW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767" y="115"/>
+            <point key="canvasLocation" x="3025" y="190"/>
         </scene>
         <!--Privacy Policy Page-->
         <scene sceneID="jnF-lN-uD4">

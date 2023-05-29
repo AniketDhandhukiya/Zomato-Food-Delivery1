@@ -269,6 +269,51 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
                     nv.b = "Punjabi, Fast Food, South indian"
                     nv.c = "Varachha, Surat"
             }
+           else if indexPath.row == 1{
+                let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+                    navigationController?.pushViewController(nv, animated: true)
+                    nv.array3 = ["Chunks of cheese simmered in a delicious tomato gravy finished in loads of butter.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","","Our house special Paneer tadka.",""]
+                    nv.array2 = ["₹150","₹145","₹310","₹350","₹270","₹250","₹50"]
+                    nv.array1 = ["Gujarati Thali","Mysore Masala Dosa","Kaju Curry","Paneer Tikka Masala","Kaju Masala","Veg Paneer Handi","Naan"]
+                    nv.imgArray = [601,602,603,604,605,606,607]
+                    nv.a = "Shree Sai Restaurants"
+                    nv.b = "Punjabi, South indian"
+                    nv.c = "Varachha, Surat"
+            }
+            else if indexPath.row == 2{
+                let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+                    navigationController?.pushViewController(nv, animated: true)
+                    nv.array3 = ["Chunks of cheese simmered in a delicious tomato gravy finished in loads of butter.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","","Our house special Paneer tadka.",""]
+                    nv.array2 = ["₹90","₹280","₹110","₹350","₹49","₹160","₹269"]
+                    nv.array1 = ["French Fries","Burger + Coke + French Fries","Aloo Tikki Burger","Double Cheese Burger","Coffe","Mac Puff","Shezwan Burger"]
+                    nv.imgArray = [555,555,555,555,555,555,555]
+                    nv.a = "Mac'D"
+                    nv.b = "Burger, Cold Drinks, Coffee"
+                    nv.c = "Sarthana, Surat"
+            }
+            if indexPath.row == 3{
+                let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+                    navigationController?.pushViewController(nv, animated: true)
+                    nv.array3 = ["Chunks of cheese simmered in a delicious tomato gravy finished in loads of butter.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","","Our house special Paneer tadka.",""]
+                    nv.array2 = ["₹220","₹240","₹280","₹30","₹180","₹210","₹20"]
+                    nv.array1 = ["Dal Bati Jumbo","Dal Bati and Churma Combo","Special Dal Bati","Buttermilk","Dry Fruit Churma","Dal churma","Bati"]
+                    nv.imgArray = [751,752,753,754,755,756,757]
+                    nv.a = "Mahadev Dal Bati"
+                    nv.b = "Rajasthani"
+                    nv.c = "Magob, Surat"
+            }
+            else if indexPath.row == 4 {
+            let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
+                navigationController?.pushViewController(nv, animated: true)
+                nv.array3 = ["Chunks of cheese simmered in a delicious tomato gravy finished in loads of butter.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","","Our house special Paneer tadka.",""]
+                
+                nv.array2 = ["₹220","₹2540","₹280","₹370","₹280","₹310","₹340"]
+                nv.array1 = ["Margherita Pizza","Cheese Burst","Special Octant Pizza","Buttermilk","Real Peprico Pizza","Giant Slice","Paneer Makhhani"]
+                nv.imgArray = [101,102,103,104,105,106,107]
+                nv.a = "Taste Of Bhagvati"
+                nv.b = "Pizaa"
+                nv.c = "Katargam, Surat"
+                }
         }
     }
     
