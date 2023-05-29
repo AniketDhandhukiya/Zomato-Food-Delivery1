@@ -202,6 +202,7 @@ class zomatoMainPag: UIViewController,UICollectionViewDelegate,UICollectionViewD
         let nv = storyboard?.instantiateViewController(withIdentifier: "controller5ViewController") as! controller5ViewController
             navigationController?.pushViewController(nv, animated: true)
             nv.array3 = ["Chunks of cheese simmered in a delicious tomato gravy finished in loads of butter.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","Roasted Cashew Nuts (Kaju) Cooked In A Tomato, Onion And Spices Based Rich And Creamy Gravy.","","Our house special Paneer tadka.",""]
+            
             nv.array2 = ["₹220","₹2540","₹280","₹370","₹280","₹310","₹340"]
             nv.array1 = ["Margherita Pizza","Cheese Burst","Special Octant Pizza","Buttermilk","Real Peprico Pizza","Giant Slice","Paneer Makhhani"]
             nv.imgArray = [101,102,103,104,105,106,107]
