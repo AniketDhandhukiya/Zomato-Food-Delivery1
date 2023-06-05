@@ -1,6 +1,4 @@
 
-
-//
 import UIKit
 
 class controller5ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
@@ -50,4 +48,8 @@ class controller5ViewController: UIViewController,UICollectionViewDelegate,UICol
     }
 
 
+    @IBAction func add(_ sender: Any) {
+        let nv = storyboard?.instantiateViewController(withIdentifier: "popup") as! popup
+        present(nv, animated: true)
+    }
 }
