@@ -14,4 +14,5 @@ class menuCell: UICollectionViewCell {
     @IBOutlet weak var lb3: UILabel!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var lb1: UILabel!
+ 
 }

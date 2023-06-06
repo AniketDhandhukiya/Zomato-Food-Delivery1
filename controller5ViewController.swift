@@ -48,8 +48,26 @@ class controller5ViewController: UIViewController,UICollectionViewDelegate,UICol
     }
 
 
-    @IBAction func add(_ sender: Any) {
-        let nv = storyboard?.instantiateViewController(withIdentifier: "popup") as! popup
-        present(nv, animated: true)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0{
+            let nv = storyboard?.instantiateViewController(withIdentifier: "popup") as! popup
+            present(nv, animated: false)
+        }
+        else if indexPath.row == 1{
+            let nv = storyboard?.instantiateViewController(withIdentifier: "popup") as! popup
+            present(nv, animated: false)
+        }
+        else if indexPath.row == 2{
+            let nv = storyboard?.instantiateViewController(withIdentifier: "popup") as! popup
+            present(nv, animated: false)
+        }
+        else if indexPath.row == 3{
+            let nv = storyboard?.instantiateViewController(withIdentifier: "popup") as! popup
+            present(nv, animated: false)
+        }
+        else if indexPath.row == 4{
+            let nv = storyboard?.instantiateViewController(withIdentifier: "popup") as! popup
+            present(nv, animated: false)
+        }
     }
 }
