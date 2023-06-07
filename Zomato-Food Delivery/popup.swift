@@ -9,6 +9,7 @@ import UIKit
 
 class popup: UIViewController {
 
+    @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var pop: UIView!
     override func viewDidLoad() {
@@ -16,6 +17,11 @@ class popup: UIViewController {
         self.pop.alpha = 0
         pop.layer.cornerRadius = 20
         stepper.layer.cornerRadius = 11
+        stepper.maximumValue = 50
+        stepper.minimumValue = 0
+        stepper.value = 0
+        stepper.stepValue = 1
+        label1.text = Int(stepper.value).description
         
     }
     
@@ -27,6 +33,8 @@ class popup: UIViewController {
     }
     
     @IBAction func stepperAction(_ sender: Any) {
+        label1.text = Int(stepper.value).description
+
     }
     @IBAction func close(_ sender: Any) {
         dismiss(animated: true)
